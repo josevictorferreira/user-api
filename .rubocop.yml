@@ -1,0 +1,29 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'db/**/*'
+    - 'Rakefile'
+    - 'config/**/*'
+    - 'bin/**/*'
+    - 'spec/rails_helper.rb'
+    - 'spec/spec_helper.rb'
+    - 'spec/fixtures/**/*'
+    - 'vendor/**/*'
+  UseCache: false
+  TargetRailsVersion: 6.1
+  TargetRubyVersion: 2.7.4
+
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context', 'feature', 'scenario', 'let', 'shared_examples', 'shared_examples_for']
+  Exclude:
+    - 'lib/tasks/**/*'
+    - 'spec/factories/*'
+
+Style/Documentation:
+  Enabled: false
+

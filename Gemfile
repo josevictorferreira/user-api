@@ -10,6 +10,10 @@ gem 'aldous', '~> 1.1.3'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 
+gem 'devise', '~> 4.8.0'
+
+gem 'jbuilder', '~> 2.11.2'
+
 gem 'puma', '~> 5.0'
 
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
